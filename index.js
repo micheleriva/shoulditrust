@@ -32,7 +32,7 @@ const checkAddress = () => {
     return console.log(chalk.red(`"${ipAddress}" is not a valid IP address`))
   }
   
-  return ipList.includes(String(ipAddress))
+  return ipList.includes(ipAddress)
          ? console.log(chalk.red(`${ipAddress} is not safe.`))
          : console.log(chalk.green(`${ipAddress} is safe.`))
 

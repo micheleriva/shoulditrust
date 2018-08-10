@@ -37,7 +37,7 @@ $ shoulditrust --update # or shoulditrust -u
 There are many way you can contribute to this project:
 
 - Adding new blacklist service url
-- Improving the [used regex](https://github.com/micheleriva/shoulditrust/blob/master/src/update.js#L52)
+- Improving the [regex](https://github.com/micheleriva/shoulditrust/blob/master/src/update.js#L52) used to extract IP addreses
 - Propising new features
 
 # License
