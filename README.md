@@ -1,5 +1,7 @@
 # 🤔 Should I Trust
 
+<img src="/docs/shoulditrust.gif">
+
 Check if an IP address is safe or not
 
 Highly inspired from [jgamblin](https://github.com/jgamblin) work: [Is this IP bad?](https://github.com/jgamblin/isthisipbad)
