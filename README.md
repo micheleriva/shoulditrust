@@ -32,6 +32,14 @@ Remember to perform periodically database updates:
 $ shoulditrust --update # or shoulditrust -u
 ```
 
+# Contributing
+
+There are many way you can contribute to this project:
+
+- Adding new blacklist service url
+- Improving the [used regex](https://github.com/micheleriva/shoulditrust/blob/master/src/update.js#L52)
+- Propising new features
+
 # License
 
 [MIT](/LICENSE.md)
