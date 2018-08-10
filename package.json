@@ -1,0 +1,22 @@
+{
+  "name": "shoulditrust",
+  "version": "0.0.1",
+  "description": "Check if an IP is blacklisted",
+  "main": "index.js",
+  "author": "Michele Riva <master@micheleriva.it>",
+  "license": "MIT",
+  "private": false,
+  "bin": {
+    "shoulditrust": "./index.js"
+  },
+  "scripts": {
+    "prepare": "rm ./src/iplist/iplist.json && echo \"[]\" >> ./src/iplist/iplist.json && rm ./src/iplist/.update && touch ./src/iplist/.update"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "chalk": "^2.4.1",
+    "clear": "^0.1.0",
+    "meow": "^5.0.0",
+    "ora": "^3.0.0"
+  }
+}
