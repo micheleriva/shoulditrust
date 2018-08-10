@@ -28,6 +28,10 @@ const checkAddress = () => {
 
   const ipAddress = cli.input[0]
 
+  if(!ipAddress) {
+    return console.log(chalk.red(`Please specify an IP address`))
+  }
+
   if ( !ipAddress.match(/^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}$/) ) {
     return console.log(chalk.red(`"${ipAddress}" is not a valid IP address`))
   }
@@ -39,7 +43,7 @@ const checkAddress = () => {
 }
 
 if ( cli.flags.update || shouldUpdate() || !ipList.length ) {
-  update().then(() => checkAddress())
+  return update()
 } else {
   checkAddress()
 }

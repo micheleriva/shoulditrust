@@ -1,6 +1,6 @@
 {
   "name": "shoulditrust",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Check if an IP is blacklisted",
   "main": "index.js",
   "author": "Michele Riva <master@micheleriva.it>",
@@ -10,7 +10,8 @@
     "shoulditrust": "./index.js"
   },
   "scripts": {
-    "prepare": "rm ./src/iplist/iplist.json && echo \"[]\" >> ./src/iplist/iplist.json && rm ./src/iplist/.update && touch ./src/iplist/.update"
+    "prepare": "rm ./src/iplist/iplist.json && echo \"[]\" >> ./src/iplist/iplist.json && rm ./src/iplist/.update && touch ./src/iplist/.update",
+    "test": "jest"
   },
   "dependencies": {
     "axios": "^0.18.0",
@@ -18,5 +19,12 @@
     "clear": "^0.1.0",
     "meow": "^5.0.0",
     "ora": "^3.0.0"
+  },
+  "devDependencies": {
+    "jest": "^23.4.2"
+  },
+  "jest": {
+    "verbose": true,
+    "testURL": "http://localhost/"
   }
 }
